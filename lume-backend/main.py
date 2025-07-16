@@ -1,12 +1,11 @@
 from fastapi import FastAPI
-from routers import mood, playlist, profile
+from services.db import users_collection
 
 app = FastAPI()
 
-app.include_router(mood.router)
-app.include_router(playlist.router)
-app.include_router(profile.router)
 
-@app.get("/")
-def root():
-    return{"message": "Lume backend is running!!"}
+
+@app.get("/mongo-test")
+def mongo_test():
+    count = users_collection.count_documents({})
+    return{"user_count": count}
