@@ -1,9 +1,7 @@
 setup.py
+lume_nlp/__init__.py
 lume_nlp.egg-info/PKG-INFO
 lume_nlp.egg-info/SOURCES.txt
 lume_nlp.egg-info/dependency_links.txt
+lume_nlp.egg-info/requires.txt
 lume_nlp.egg-info/top_level.txt
-model/__init__.py
-model/mood_classifier.py
-utils/__init__.py
-utils/preprocessing.py
